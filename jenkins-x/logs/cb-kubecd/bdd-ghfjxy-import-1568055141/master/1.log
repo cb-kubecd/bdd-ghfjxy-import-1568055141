@@ -54,100 +54,55 @@ upserted Pipeline cb-kubecd-bdd-ghf**y-import-156-1
 created PipelineRun cb-kubecd-bdd-ghf**y-import-156-1
 created PipelineStructure cb-kubecd-bdd-ghf**y-import-156-1
 
-waiting for stage [32mrun-make[0m : container [32mstep-credential-initializer-tpt4v[0m to start...
-
-
 Showing logs for build [32mmeta-cb-kubecd-bdd-ghfjxy-impor-1[0m stage [32mrun-make[0m and container [32mstep-credential-initializer-tpt4v[0m
 {"level":"warn","ts":1568055205.8862495,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
 {"level":"info","ts":1568055205.8869839,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
-
-waiting for stage [32mrun-make[0m : container [32mstep-working-dir-initializer-qtrx9[0m to start...
-
 
 Showing logs for build [32mmeta-cb-kubecd-bdd-ghfjxy-impor-1[0m stage [32mrun-make[0m and container [32mstep-working-dir-initializer-qtrx9[0m
 {"level":"warn","ts":1568055207.098478,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
 {"level":"info","ts":1568055207.0998838,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
 
-waiting for stage [32mrun-make[0m : container [32mstep-place-tools[0m to start...
-
-
 Showing logs for build [32mmeta-cb-kubecd-bdd-ghfjxy-impor-1[0m stage [32mrun-make[0m and container [32mstep-place-tools[0m
-
-waiting for stage [32mrun-make[0m : container [32mstep-git-source-cb-kubecd-bdd-ghfjxy-import-156-pxf45[0m to start...
-
 
 Showing logs for build [32mmeta-cb-kubecd-bdd-ghfjxy-impor-1[0m stage [32mrun-make[0m and container [32mstep-git-source-cb-kubecd-bdd-ghfjxy-import-156-pxf45[0m
 {"level":"warn","ts":1568055214.0102878,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
 {"level":"info","ts":1568055215.1162393,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/cb-kubecd/bdd-ghf**y-import-1568055141.git @ v0.0.1 in path /workspace/source"}
 
-waiting for stage [32mrun-make[0m : container [32mstep-git-merge[0m to start...
-
-
 Showing logs for build [32mmeta-cb-kubecd-bdd-ghfjxy-impor-1[0m stage [32mrun-make[0m and container [32mstep-git-merge[0m
 Using SHAs from PULL_REFS=master:2f3ed2f47a4ee37c62f5b455c45c94a855b56930
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-waiting for stage [32mrun-make[0m : container [32mstep-setup-jx-git-credentials[0m to start...
-
-
 Showing logs for build [32mmeta-cb-kubecd-bdd-ghfjxy-impor-1[0m stage [32mrun-make[0m and container [32mstep-setup-jx-git-credentials[0m
 Generated Git credentials file /workspace/xdg_config/git/credentials
 
-waiting for stage [32mrun-make[0m : container [32mstep-build-make-build[0m to start...
-
-
 Showing logs for build [32mmeta-cb-kubecd-bdd-ghfjxy-impor-1[0m stage [32mrun-make[0m and container [32mstep-build-make-build[0m
 CGO_ENABLED=0 GO15VENDOREXPERIMENT=1 go build -ldflags '' -o bin/bdd-ghf**y-import-1568055141 main.go
-
-waiting for stage [32mrun-make[0m : container [32mstep-source-mkdir-cb-kubecd-bdd-ghfjxy-import-156-gdk7r[0m to start...
-
 
 Showing logs for build [32mmeta-cb-kubecd-bdd-ghfjxy-impor-1[0m stage [32mrun-make[0m and container [32mstep-source-mkdir-cb-kubecd-bdd-ghfjxy-import-156-gdk7r[0m
 {"level":"warn","ts":1568055222.9283187,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
 {"level":"info","ts":1568055222.9629047,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /pvc/run-make/workspace\""}
 
-waiting for stage [32mrun-make[0m : container [32mstep-source-copy-cb-kubecd-bdd-ghfjxy-import-156-h2gqj[0m to start...
-
-
 Showing logs for build [32mmeta-cb-kubecd-bdd-ghfjxy-impor-1[0m stage [32mrun-make[0m and container [32mstep-source-copy-cb-kubecd-bdd-ghfjxy-import-156-h2gqj[0m
 {"level":"warn","ts":1568055223.3106568,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
 {"level":"info","ts":1568055223.32806,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"cp -r /workspace/source/. /pvc/run-make/workspace\""}
-
-waiting for stage [32meverything-else[0m : container [32mstep-credential-initializer-jjrc5[0m to start...
-
 
 Showing logs for build [32mmeta-cb-kubecd-bdd-ghfjxy-impor-1[0m stage [32meverything-else[0m and container [32mstep-credential-initializer-jjrc5[0m
 {"level":"warn","ts":1568055235.65943,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
 {"level":"info","ts":1568055235.660019,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-waiting for stage [32meverything-else[0m : container [32mstep-working-dir-initializer-nfrx6[0m to start...
-
-
 Showing logs for build [32mmeta-cb-kubecd-bdd-ghfjxy-impor-1[0m stage [32meverything-else[0m and container [32mstep-working-dir-initializer-nfrx6[0m
 {"level":"warn","ts":1568055236.6885788,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
 {"level":"info","ts":1568055236.6905837,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/charts/bdd-ghf**y-import-1568055141\""}
 
-waiting for stage [32meverything-else[0m : container [32mstep-place-tools[0m to start...
-
-
 Showing logs for build [32mmeta-cb-kubecd-bdd-ghfjxy-impor-1[0m stage [32meverything-else[0m and container [32mstep-place-tools[0m
-
-waiting for stage [32meverything-else[0m : container [32mstep-create-dir-workspace-kqkmb[0m to start...
-
 
 Showing logs for build [32mmeta-cb-kubecd-bdd-ghfjxy-impor-1[0m stage [32meverything-else[0m and container [32mstep-create-dir-workspace-kqkmb[0m
 {"level":"warn","ts":1568055243.8246758,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
 {"level":"info","ts":1568055243.8291516,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
 
-waiting for stage [32meverything-else[0m : container [32mstep-source-copy-workspace-rzmc8[0m to start...
-
-
 Showing logs for build [32mmeta-cb-kubecd-bdd-ghfjxy-impor-1[0m stage [32meverything-else[0m and container [32mstep-source-copy-workspace-rzmc8[0m
 {"level":"warn","ts":1568055244.214995,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
 {"level":"info","ts":1568055244.5426617,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"cp -r /pvc/run-make/workspace/. /workspace/source\""}
-
-waiting for stage [32meverything-else[0m : container [32mstep-build-container-build[0m to start...
-
 
 Showing logs for build [32mmeta-cb-kubecd-bdd-ghfjxy-impor-1[0m stage [32meverything-else[0m and container [32mstep-build-container-build[0m
 [36mINFO[0m[0000] No base image, nothing to extract            
@@ -169,21 +124,12 @@ Showing logs for build [32mmeta-cb-kubecd-bdd-ghfjxy-impor-1[0m stage [32meve
 2019/09/09 18:54:09 pushed blob: sha256:413ccea34cd7f56d557efffe7262f7e3dca0c062212f05b2888b33480febb59e
 2019/09/09 18:54:11 gcr.io/jenkins-x-bdd2/bdd-ghf**y-import-1568055141:0.0.1: digest: sha256:94a22db45b531b897e46b4ce87c4677f87e60a6b19a187eaedc4e0a50e684e09 size: 428
 
-waiting for stage [32meverything-else[0m : container [32mstep-build-post-build[0m to start...
-
-
 Showing logs for build [32mmeta-cb-kubecd-bdd-ghfjxy-impor-1[0m stage [32meverything-else[0m and container [32mstep-build-post-build[0m
 no CVE provider running in the current ** namespace so skip adding image to be analysed
-
-waiting for stage [32meverything-else[0m : container [32mstep-promote-changelog[0m to start...
-
 
 Showing logs for build [32mmeta-cb-kubecd-bdd-ghfjxy-impor-1[0m stage [32meverything-else[0m and container [32mstep-promote-changelog[0m
 Converted /workspace/source to an unshallow repository
 no previous commit version found so change diff unavailable
-
-waiting for stage [32meverything-else[0m : container [32mstep-promote-helm-release[0m to start...
-
 
 Showing logs for build [32mmeta-cb-kubecd-bdd-ghfjxy-impor-1[0m stage [32meverything-else[0m and container [32mstep-promote-helm-release[0m
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
@@ -194,9 +140,6 @@ Successfully added Helm repository jenkins-x-chartmuseum.
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
 Uploading chart file bdd-ghf**y-import-1568055141-0.0.1.tgz to http://jenkins-x-chartmuseum:8080/api/charts
 Received 201 response: {"saved":true}
-
-waiting for stage [32meverything-else[0m : container [32mstep-promote-jx-promote[0m to start...
-
 
 Showing logs for build [32mmeta-cb-kubecd-bdd-ghfjxy-impor-1[0m stage [32meverything-else[0m and container [32mstep-promote-jx-promote[0m
 WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
